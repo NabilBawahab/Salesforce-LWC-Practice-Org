@@ -1,0 +1,16 @@
+<template>
+  <lightning-input
+    label="Search for contact & leads"
+    onchange={handleChange}
+    type="search"
+    placeholder="Search for contact & lead"
+  ></lightning-input>
+  <template if:true={lead}>
+    <template for:each={lead} for:item="record">
+      <p key={record.Id}>{record.Name}</p>
+    </template>
+    <template for:each={contact} for:item="record">
+      <p key={record.Id}>{record.Name}</p>
+    </template>
+  </template>
+</template>
