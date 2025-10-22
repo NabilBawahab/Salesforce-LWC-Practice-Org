@@ -10,12 +10,3 @@ public with sharing class ContactAndLeadSearch {
     return result;
   }
 }
-
-public class Person {
-  String name;
-  Integer age;
- Person(String name, Integer age){
-  this.name = name;
-  this.age = age;
- }
-}
